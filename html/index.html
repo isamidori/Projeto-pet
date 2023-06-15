@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITULO TESTE</title>  <!-- Titulo da guia -->
+
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="menu">
+        <img src="../images/logo.png">
+        <nav>
+            <ul>
+                <li><a href="#secao-1">SOBRE NÓS</a></li>
+                <li><a href="#secao-2">CLÍNICA</a></li>
+                <li><a href="#secao-3">HOTEL E DAYCARE</a></li>
+                <li><a href="#secao-4">CONTATO</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="sobre">
+    <h1>Sobre nós</h1>
+
+            <p>Bem-vindo ao Viva Pet! Somos um pet shop completo, oferecendo serviços de banho, tosa, clínica veterinária, hotel e daycare. Nossa equipe altamente treinada se dedica ao cuidado e bem-estar dos animais de estimação. Proporcionamos tratamentos de banho e tosa profissionais, serviços veterinários de qualidade e hospedagem segura para seu pet. Venha nos visitar e confie seu amigo peludo aos nossos cuidados.</p>
+        </div>
+    </div>
+</div>
+
+<div class="clinica" id="secao-2">
+    <div class="carrossel">
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/2.png" alt="Imagem 1" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/3.png" alt="Imagem 2" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/4.png" alt="Imagem 3" style="width:100%;">
+                </div>
+            </div>
+            <!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a> -->
+        </div>
+    </div>
+
+    <div class="conteudo-clinica">
+        <h1>Clínica</h1>
+        <p>"Nossa clínica veterinária é um espaço dedicado ao cuidado abrangente da saúde dos animais de estimação. Contamos com uma equipe de veterinários experientes e comprometidos, equipamentos modernos e uma variedade de serviços médicos. Realizamos consultas de rotina, vacinação, exames diagnósticos, tratamento de doenças e oferecemos orientações sobre cuidados preventivos. Nosso objetivo é garantir o bem-estar e a qualidade de vida dos animais, proporcionando atendimento atencioso e personalizado em todas as etapas da vida do seu pet."</p>
+    </div>
+</div>
+
+
+<div class="hotel" id="secao-3">
+    <div class="conteudo-hotel">
+        <h1>Hotel e Daycare</h1>
+        <p>Nossas instalações também contam com serviços de hotel e daycare para seu animal de estimação. Se você precisa viajar ou precisa de um lugar seguro para deixar seu pet durante o dia, oferecemos espaços amplos e confortáveis, onde seu pet pode brincar, socializar e relaxar. Nossa equipe dedicada fornece supervisão constante, garantindo que seu pet receba carinho, atenção e cuidados adequados. No Viva Pet, entendemos que seu animal de estimação é parte da família, e estamos aqui para oferecer um ambiente seguro e acolhedor enquanto você estiver ausente."</p>
+    </div>
+
+    <div class="carrossel-2">
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/6.png" alt="Imagem 1" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/7.png" alt="Imagem 2" style="width:100%;">
+                </div>
+                
+            </div>
+            <!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a> -->
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="contato" id="secao-4">
+    <h1>Contato</h1>
+ <form action="https://api.whatsapp.com/send" method="GET" target="_blank">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="text" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" name="text" rows="5" required></textarea>
+            </div>
+            <input type="hidden" name="phone" value="+5511991420902">
+            <input type="hidden" name="text" value="Olá! Meu nome é [NOME] e meu e-mail é [E-MAIL]. [MENSAGEM]">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+</div>
+
+</body>
+</html>

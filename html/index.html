@@ -7,11 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITULO TESTE</title>  <!-- Titulo da guia -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="../css/index.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var cards = document.querySelectorAll(".card");
+    
+        function animateCards() {
+          cards.forEach(function(card) {
+            var waypoint = new Waypoint({
+              element: card,
+              handler: function() {
+                card.classList.add("animate__animated", "animate__fadeInUp");
+              },
+              offset: "80%" // Ajuste este valor para controlar o ponto em que a animação é ativada
+            });
+          });
+        }
+    
+        animateCards();
+      });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('a').on('click', function(event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000); // Altere o valor '1000' para controlar a velocidade da rolagem
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>

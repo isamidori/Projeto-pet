@@ -1,5 +1,9 @@
-html{
+html body{
     margin: 0;
+}
+
+body{
+  padding: 0;
 }
 
 
@@ -7,6 +11,57 @@ header {
     background-color: #0096AD;
     height: 300px;
 }
+
+
+.container {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    text-align: center;
+  }
+
+.patinha{
+  margin-top: -10%;
+  margin-left: -10%;
+  width: 100px;
+}
+
+.patinha2{
+  margin-top: -10%;
+  margin-left: -15%;
+  width: 100px;
+}
+
+.patinha3{
+  margin-top: -10%;
+  margin-left: 100%;
+  width: 100px;
+}
+
+.patinha4{
+  margin-top: -10%;
+  margin-left: 105%;
+  width: 100px;
+}
+
+.patinha5{
+  margin-top: -10%;
+  margin-left: 100%;
+  width: 100px;
+}
+
+.patinha6{
+  margin-top: -10%;
+  margin-left: -120%;
+  width: 100px;
+}
+
+.patinha7{
+    margin-top: -40%;
+    margin-left: 105%;
+    width: 100px;
+}
+
 
 .menu {
     display: flex;
@@ -50,89 +105,125 @@ header {
     text-align: justify;
     font-size: 20px;
     margin-top: 50px;
+    
 
  }
 
-.clinica h1{
+ .clinica h1{
     text-align: center;
-}
+ }
 
-
-.clinica {
+ .clinica{
     width: 80%;
     margin: auto;
-    font-size: 20px;
     text-align: justify;
+    font-size: 20px;
+    margin-top: 50px;
+ }
 
+
+ .hotel h1{
+    text-align: center;
+ }
+
+ 
+ .cards {
+    width: 85%;
     display: flex;
-    align-items: flex-start;
-    margin-top: 70px;
-    /* margin-top: 70px;
-    margin-right: 5%;
- */
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* 40% da largura da tela */
+    /* margin-left: 20px; Distância da margem esquerda */
+    margin: auto;
     
 
-
-}
-
-.carrossel {
-    /* margin-left: -5%;
-    flex: 0 0 50%; */
-    width: 400%;
-}
-
-.carousel-item img {
-    max-width: 400px;
-    height: 400px;
-    margin-left: 30%;
-    border-radius: 10%;
   }
 
-.carousel-control-next {
-    margin-right: 70px; /* Ajuste o valor conforme necessário */
-} */
-
-
-.conteudo-clinica {
-    width: 10000px;
-    /* flex: 0 0 50%; */
-    margin-right: 10px;
-    text-align: justify;
-    font-size: 20px;
+  .card-img-top {
+    border-radius: 10px; /* Adjust the border radius value as desired */
 }
 
-.hotel h1{
-    text-align: center;
-}
-
-.hotel {
+  .cards-2{
+    width: 70%;
     display: flex;
-    align-items: flex-start;
-    margin-top: 50px;
-    margin-left: 100px;
-}
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* 40% da largura da tela */
+    /* margin-left: 20px; Distância da margem esquerda */
+    margin: auto;
+  }
 
-.carrossel-2 {
-    margin-right: 20px;
-    flex: 0 0 50%;
-}
 
-.conteudo-hotel {
-    flex: 0 0 50%;
-    margin-right: 10px;
+  .card {
+    margin: 0 10px;
+  }
+
+ .hotel{
+    width: 100%;
+    margin: auto;
     text-align: justify;
     font-size: 20px;
+    margin-top: 50px;
+ }
+
+ .contato {
+  margin-top: 5%;
+  width: 100vw; /* Altere aqui */
+  background-image: url('../images/bg-contato.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+
+
+}
+
+.invisible-div {
+  color: #0096ad00;
 }
 
 .contato h1{
-    padding-top: 50px;
+    /* padding-top: 10px; */
     width: 100px;
     margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #0096ad00;
+
 }
 
 form{
-    width: 400px;
+    width: 600px;
     margin: auto;
+    background-color: #0096ada9 ;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    height: 400px;
+
+}
+
+#name{
+  width: 400px;
+  margin: auto;
+}
+
+#email{
+  width: 400px;
+  margin: auto;
+}
+
+#message{
+  width: 400px;
+  margin: auto;
+}
+
+
+/* Nome de cada campo */
+form label {
+  color: white;
+  width: 100px;
+  font-weight: bold;
 }
 
 .logo-whats{
@@ -150,20 +241,19 @@ form{
 footer{
     background-color: #0096AD;
     height: 200px;
-    /* margin-top: -200px; */
-
+    width: 100%;
 }
 
-/* .footer-img{
-    margin-bottom:0;
-    margin-top: -200px;
 
-} */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-footer img {
-    width: 250px;
-    margin-top: -50px;
-    
+.small-logo {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
 }
 
 /* 

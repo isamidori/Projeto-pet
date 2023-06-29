@@ -5,40 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITULO TESTE</title>  <!-- Titulo da guia -->
+    <title>Viva Pet</title> <!-- Titulo da guia -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+
+    <!-- script para os cards aparecerem na tela ao atualizar -->
     <script>
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var cards = document.querySelectorAll(".card");
-    
-        function animateCards() {
-          cards.forEach(function(card) {
-            var waypoint = new Waypoint({
-              element: card,
-              handler: function() {
-                card.classList.add("animate__animated", "animate__fadeInUp");
-              },
-              offset: "80%" // Ajuste este valor para controlar o ponto em que a animação é ativada
-            });
-          });
-        }
-    
-        animateCards();
-      });
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var cards = document.querySelectorAll(".card");
+
+            function animateCards() {
+                cards.forEach(function (card) {
+                    var waypoint = new Waypoint({
+                        element: card,
+                        handler: function () {
+                            card.classList.add("animate__animated", "animate__fadeInUp");
+                        },
+                        offset: "80%" // Ajuste este valor para controlar o ponto em que a animação é ativada
+                    });
+                });
+            }
+
+            animateCards();
+        });
     </script>
 
+
+    <!-- script para ao clicar em um item do menu, a tela rolar devagar até a secao correspondente -->
     <script>
-        $(document).ready(function() {
-            $('a').on('click', function(event) {
+        $(document).ready(function () {
+            $('a').on('click', function (event) {
                 if (this.hash !== '') {
                     event.preventDefault();
                     var hash = this.hash;
@@ -52,92 +56,89 @@
 </head>
 
 <body>
-<header>
-    <div class="menu">
-        <img src="../images/logo.png">
-        <nav>
-            <ul>
-                <li><a href="#secao-1">SOBRE NÓS</a></li>
-                <li><a href="#secao-2">CLÍNICA</a></li>
-                <li><a href="#secao-3">HOTEL E DAYCARE</a></li>
-                <li><a href="#secao-4">CONTATO</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-
-<div class="sobre">
-
-    <h1>Sobre nós</h1>
-    <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha">
-
-
-            <p>Bem-vindo ao Viva Pet! Somos um pet shop completo, oferecendo serviços de banho, tosa, clínica veterinária, hotel e daycare. Nossa equipe altamente treinada se dedica ao cuidado e bem-estar dos animais de estimação. Proporcionamos tratamentos de banho e tosa profissionais, serviços veterinários de qualidade e hospedagem segura para seu pet. Venha nos visitar e confie seu amigo peludo aos nossos cuidados.</p>
+    <header>
+        <div class="menu">
+            <img src="../images/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="#secao-1">SOBRE NÓS</a></li>
+                    <li><a href="#secao-2">CLÍNICA</a></li>
+                    <li><a href="#secao-3">HOTEL E DAYCARE</a></li>
+                    <li><a href="#secao-4">CONTATO</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</div>
+    </header>
 
-<div class="clinica" id="secao-2">
-    
+
+
+    <div class="sobre">
+
+        <h1>Sobre nós</h1>
+        <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha">
+        <p>Bem-vindo ao Viva Pet! Somos um pet shop completo, oferecendo serviços de banho, tosa, clínica veterinária,
+            hotel e daycare. Nossa equipe altamente treinada se dedica ao cuidado e bem-estar dos animais de estimação.
+            Proporcionamos tratamentos de banho e tosa profissionais, serviços veterinários de qualidade e hospedagem
+            segura para seu pet. Venha nos visitar e confie seu amigo peludo aos nossos cuidados.</p>
+    </div>
+        
+
+    <div class="clinica" id="secao-2">
 
         <h1>Clínica</h1>
         <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha2">
         <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha3">
-        <p>Nossa clínica veterinária é um espaço dedicado ao cuidado abrangente da saúde dos animais de estimação. Contamos com uma equipe de veterinários experientes e comprometidos, equipamentos modernos e uma variedade de serviços médicos. Realizamos consultas de rotina, vacinação, exames diagnósticos, tratamento de doenças e oferecemos orientações sobre cuidados preventivos. Nosso objetivo é garantir o bem-estar e a qualidade de vida dos animais, proporcionando atendimento atencioso e personalizado em todas as etapas da vida do seu pet."</p>
-        <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha4">    
+        <p>Nossa clínica veterinária é um espaço dedicado ao cuidado abrangente da saúde dos animais de estimação.
+            Contamos com uma equipe de veterinários experientes e comprometidos, equipamentos modernos e uma variedade
+            de serviços médicos. Realizamos consultas de rotina, vacinação, exames diagnósticos, tratamento de doenças e
+            oferecemos orientações sobre cuidados preventivos. Nosso objetivo é garantir o bem-estar e a qualidade de
+            vida dos animais, proporcionando atendimento atencioso e personalizado em todas as etapas da vida do seu
+            pet."</p>
+        <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha4">
 
         <div class="cards-container">
-        <div class="cards">
+            <div class="cards">
 
-            <div class="card">
-              <img src="../images/2.png" class="card-img-top"  alt="Card 1">
+                <div class="card">
+                    <img src="../images/2.png" class="card-img-top" alt="Card 1">
+                </div>
+                <div class="card">
+                    <img src="../images/3.png" class="card-img-top" alt="Card 2">
+
+                </div>
+                <div class="card">
+                    <img src="../images/4.png" class="card-img-top" alt="Card 3">
+                </div>
             </div>
-            <div class="card">
-              <img src="../images/3.png" class="card-img-top" alt="Card 2">
+        </div>
 
+
+        <div class="hotel" id="secao-3">
+            <h1>Hotel e Daycare</h1>
+            <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha5">
+            <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha6">
+
+            <p>Nossas instalações também contam com serviços de hotel e daycare para seu animal de estimação. Se você
+                precisa viajar ou precisa de um lugar seguro para deixar seu pet durante o dia, oferecemos espaços
+                amplos e confortáveis, onde seu pet pode brincar, socializar e relaxar. Nossa equipe dedicada fornece
+                supervisão constante, garantindo que seu pet receba carinho, atenção e cuidados adequados. No Viva Pet,
+                entendemos que seu animal de estimação é parte da família, e estamos aqui para oferecer um ambiente
+                seguro e acolhedor enquanto você estiver ausente.</p>
+
+            <div class="cards-2">
+                <div class="card">
+                    <img src="../images/6.png" class="card-img-top" alt="Card 1">
+                </div>
+                <div class="card">
+                    <img src="../images/7.png" class="card-img-top" alt="Card 2">
+                </div>
             </div>
-            <div class="card">
-              <img src="../images/4.png" class="card-img-top" alt="Card 3">
-            </div>
-          </div>
+        </div>
+    </div>
 
-</div>
-
-
-<div class="hotel" id="secao-3">
-        <h1>Hotel e Daycare</h1>
-        <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha5">
-        <img src="../images/patinha.png" alt="Descrição da Imagem" class="patinha6">
-
-        <p>Nossas instalações também contam com serviços de hotel e daycare para seu animal de estimação. Se você precisa viajar ou precisa de um lugar seguro para deixar seu pet durante o dia, oferecemos espaços amplos e confortáveis, onde seu pet pode brincar, socializar e relaxar. Nossa equipe dedicada fornece supervisão constante, garantindo que seu pet receba carinho, atenção e cuidados adequados. No Viva Pet, entendemos que seu animal de estimação é parte da família, e estamos aqui para oferecer um ambiente seguro e acolhedor enquanto você estiver ausente.</p>
-  
-        <div class="cards-2">
-            
-            <div class="card">
-              <img src="../images/6.png" class="card-img-top" alt="Card 1">
-            </div>
-            <div class="card">
-              <img src="../images/7.png" class="card-img-top" alt="Card 2">
-
-            </div>
-            
-
-    </div> 
-    
-    
-</div>
-
-
-</div>
-
-
-<div class="contato" id="secao-4">
-    
-    <h1>Contato</h1>
-
- <form action="https://api.whatsapp.com/send" method="GET" target="_blank">
+    <div class="contato" id="secao-4">
+        <h1>Contato</h1>
+        <form action="https://api.whatsapp.com/send" method="GET" target="_blank">
 
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
@@ -158,26 +159,19 @@
                 <div class="logo-whats">
 
                 </div>
-                
-
-            </form>
-        
-</div>
-
-</div>
-
-
+        </form>
+    </div>
+    </div>
 
 </body>
-
 
 <footer>
 
     <div class="footer-container">
         <img src="../images/logo.png" alt="Logo" class="small-logo">
-      </div>
-   
-</footer> 
+    </div>
+
+</footer>
 
 
 </html>
